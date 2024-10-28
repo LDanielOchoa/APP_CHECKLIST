@@ -1,14 +1,13 @@
 {
   "expo": {
-    "name": "ProjectExpo",
-    "slug": "ProjectExpo",
+    "name": "AppExpo",
+    "slug": "AppExpo",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
-    "scheme": "myapp",
-    "userInterfaceStyle": "automatic",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/images/splash.png",
+      "image": "./assets/icon.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -17,20 +16,24 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "foregroundImage": "",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.anonymous.AppExpo"
     },
     "web": {
-      "bundler": "metro",
-      "output": "static",
-      "favicon": "./assets/images/favicon.png"
+      "favicon": "./assets/imagenes/logo.png"
     },
     "plugins": [
-      "expo-router"
+      "expo-asset"
     ],
-    "experiments": {
-      "typedRoutes": true
+    "assetBundlePatterns": [
+      "assets/**/*"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "5abf73af-fa80-468a-856c-4d03778ffa9c"
+      }
     }
   }
 }
